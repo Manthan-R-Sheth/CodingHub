@@ -1,0 +1,9 @@
+#include <unistd.h>
+
+int main()
+{
+    char *getshell[2];
+    getshell[0]="/bin/sh";
+    getshell[1]=NULL;
+    execve(getshell[0], getshell, NULL);
+}
